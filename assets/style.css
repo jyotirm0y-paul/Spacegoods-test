@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: Albra;
-  src: url(font-family/Albra-Font-Family/Albra-Font-Family/Albra-Regular.otf);
+  src: url(font-family/Albra-Font-Family/Albra-Font-Family/FontsFree-Net-AlbraRegular.ttf);
 }
 
 @font-face {
@@ -24,14 +24,15 @@
   
   margin: auto;
   width: 75%;
-  padding: 89px 3% 89px 6%;
+  padding: 89px 0  89px 0;
 }
 
 .spacegoods .container h1{
   font-family: 'Albra';
   font-style: normal;
-  font-weight: 700;
+  font-weight: bolder!important;
   font-size: 42px;
+  line-height: 50px;
   color: #000000;
   text-align: center;
 }
@@ -39,9 +40,11 @@
 .spacegoods .container .all_card{
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
   text-align: center;
   margin-top: 22px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .spacegoods .container .all_card .card .card_body{
