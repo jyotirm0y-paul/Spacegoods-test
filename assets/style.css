@@ -1,0 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Albra;
+  src: url(font-family/Albra-Font-Family/Albra-Font-Family/Albra-Regular.otf);
+}
+
+@font-face {
+  font-family: Apercu Pro;
+  src: url(font-family/Apercu-Pro/apercu_regular_pro.otf);
+}
+
+/* SPACEGOODS SECTION STYLE START */
+
+.spacegoods{
+  background: #f1eefe;
+}
+
+.spacegoods .container{
+  
+  margin: auto;
+  width: 75%;
+  padding: 89px 3% 89px 6%;
+}
+
+.spacegoods .container h1{
+  font-family: 'Albra';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  color: #000000;
+  text-align: center;
+}
+
+.spacegoods .container .all_card{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.spacegoods .container .all_card .card .card_body{
+  margin-top: 5px;
+}
+
+.spacegoods .container .all_card .card h3{
+  font-family: 'Apercu Pro';
+font-weight: 700;
+font-size: 28px;
+color: #010101;
+}
+
+.spacegoods .container .all_card .card p{
+  font-family: 'Apercu Pro';
+  font-weight: 400;
+  font-size: 18px;
+  color: #010101;
+  padding: 6px 50px;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+  .spacegoods .container {
+    margin: auto;
+    width: 75%;
+    padding: 42px 3% 89px 6%;
+}
+  .spacegoods .container .all_card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 22px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .spacegoods .container .all_card .card{
+    margin-top: 20px;
+  }
+
+}
+
+/* SPACEGOODS SECTION STYLE END */
+
+
+/* FAQS SECTION STYLE START */
+
+.faq .container{
+  margin: 90px auto;
+	max-width: 797px;
+}
+
+
+.faq .container .heading{
+  text-align: center;
+}
+.faq .container .heading h1{
+  font-family: 'Albra';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 50px;
+color: #010101;
+padding-bottom: 10px;
+}
+
+.faq .container .heading h5{
+  font-family: 'Apercu Pro';
+font-weight: 400;
+font-size: 22px;
+color: #010101;
+}
+
+.faq .container .content, .faq .container .content .active{
+  position: relative;
+  border-bottom: 2px solid rgb(247 247 247)
+}
+
+.faq .container .content .question{
+  font-family: 'Apercu Pro';
+font-weight: 400;
+font-size: 22px;
+line-height: 31px;
+color: #010101;
+padding: 10px 0;
+}
+
+.faq .container .content .answer{
+display: none;
+}
+
+.faq .container .content.active .answer {
+  display: block;
+  font-family: 'Apercu Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #010101;
+  opacity: 0.6;
+  padding: 6px 0 20px 0;
+}
+
+.faq .container .content .toggle{
+	border: none;
+  font-size: 16px;
+	border-radius: 50%;
+	color: #010101;
+  background: white;
+	cursor: pointer;
+	position: absolute;
+  top: 16px;
+  right: 0;
+  z-index: 1;
+}
+
+.faq .container .content .toggle .fa-chevron-up{
+  display: none;
+}
+
+.faq .container .content.active .toggle .fa-chevron-up{
+  display: block;
+}
+
+.faq .container .content .toggle .fa-chevron-down{
+  display: block;
+}
+
+.faq .container .content.active .toggle .fa-chevron-down{
+  display: none;
+}
+
+.faq .faq-footer{
+  font-family: 'Apercu Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 39px;
+color: #010101;
+margin-top: 30px;
+}
+
+.faq .faq-footer a{
+  color:#fa1578
+}
+
+@media only screen and (max-width: 992px) {
+  .faq .container {
+    margin: 90px auto;
+    max-width: 83%;
+}
+}
+/* FAQS SECTION STYLE END */
+
+
